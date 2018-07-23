@@ -2,8 +2,10 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     height: 100%;
+    background-color: #000;
+    color: #f5f5f5;
 }
 
 .uppercase {
@@ -11,36 +13,89 @@ body {
 }
 
 .container-fluid {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
 }
 
-.parallax1 {
-    min-height: 720px;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/rainbow-no-opacity.jpg");
+.nav-list {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.parallax2 {
-    min-height: 640px;
-    height: 1000px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/band-bw-1.jpg");
+.nav-list li {
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    font-size: 20px;
 }
 
-.parallax3 {
-    min-height: 720px;
-    height: 1000px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/band-color-1.jpg");
+.album-cover {
+    width: 55%;
+}
+
+.buy-image {
+    width: 167px;
+    height: 61px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.footer {
+    padding-top: 20px;
+}
+
+.copyright {
+    color: #4f4f4f;
+}
+/************* MEDIA QUERIES ***********************/
+
+
+@media(max-width: 767px) {
+    .album-cover {
+        width: 80%;
+    }
+
+    .nav-list li {
+        text-align: left;
+    }
+}
+
+@media(max-width: 520px) {
+
+    /* collapse menu at this width */
+}
+
+
+/**************** BOOTSTRAP OVERRIDES *******************/
+
+
+.navbar {
+    background-color: #000;
+    border: none;
+}
+
+.nav li a {
+    padding-bottom: 0;
+    line-height: 35px;
+}
+
+.navbar .nav {
+    float: none;
+}
+
+.navbar .nav li a,
+.navbar .nav li a:active,
+.navbar .nav li a:visited {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.navbar .nav li {
+    transition: 300ms;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.navbar .nav li:hover {
+    border-color: #b30001;
 }
