@@ -19,6 +19,18 @@
 
 <body>
 
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <header class="container-fluid">
 
         <div class="nav-list">
@@ -33,9 +45,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item col-xs-12 col-sm-4 col-md-4 col-lg-4 uppercase"><a href="look.html">Look</a></li>
-                        <li class="nav-item col-xs-12 col-sm-4 col-md-4 col-lg-4 uppercase"><a href="listen.html">Listen</a></li>
-                        <li class="nav-item col-xs-12 col-sm-4 col-md-4 col-lg-4 uppercase"><a href="learn.html">Learn</a></li>
+                        <li class="nav-item col-xs-12 col-sm-3 col-md-3 col-lg-3 uppercase"><a href="index.html">Home</a></li>
+                        <li class="nav-item col-xs-12 col-sm-3 col-md-3 col-lg-3 uppercase"><a href="look.html">Look</a></li>
+                        <li class="nav-item col-xs-12 col-sm-3 col-md-3 col-lg-3 uppercase"><a href="listen.html">Listen</a></li>
+                        <li class="nav-item col-xs-12 col-sm-3 col-md-3 col-lg-3 uppercase active"><a href="learn.html">Learn</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,14 +56,65 @@
 
     </header>
 
-    <section class="container-fluid">
+    <section class="container">
 
-        LEARN
+        <div class="grid-container">
+
+            <div class="box1">
+                <p>Ape Rising are an Experimental progressive synth rock 5 piece from Cavan, Trim and Maynooth. Specializing in melodic Spacey Synth rock with a slightly videogamesy feel and a few musical twists and turns, Ape Rising have spent the last
+                    18 months writing and recording their debut album in-house which was launched at The Bowery in Rathmines, Dublin on the 22nd of September.</p>
+            </div>
+
+            <div class="image1">
+                <img class="image-thumb" src="assets/images/band-bw-1.jpg" />
+            </div>
+
+
+            <div class="box2">
+                <p>Ape Rising’s self-titled album is now available to buy online at all the usual online music sites including: iTunes, Spotify, Bandcamp and Amazon Music. 12 tracks of full-on melodic chaos. Check the links below for where you can listen
+                    and find out more!</p>
+                <ul>
+                    <li>Peter Donohue: Vocals / Guitar</li>
+                    <li>Johno Leader: Lead Vocals / Guitar</li>
+                    <li>Peter Denton: Vocals / Keys</li>
+                    <li>Jimmy Deface: Vocals / Bass</li>
+                    <li>Fran McDonnell: Drums</li>
+                </ul>
+            </div>
+
+            <div class="image2">
+                <img class="image-thumb" src="assets/images/band-color-1.jpg" />
+            </div>
+
+
+
+            <div class="box4">
+
+                <ul class="list-unstyled">
+
+                    <li><a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/Ape_Rising?ref_src=twsrc%5Etfw">Tweets by Ape_Rising</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </li>
+
+                    <li class="badges">
+                        <a href="https://geo.itunes.apple.com/us/album/ape-rising/1281727835?mt=1&app=music" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2017-09-22&kind=album&bubble=apple_music) no-repeat;width:158px;height:45px;"></a>
+                        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:5RmCenH87JZco4BjEq1rFt?si=-xv__Wp3QXylRwqJykrkTA&size=detail&theme=dark" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
 
     </section>
 
     <footer class="container-fluid">
-        
+
         <div class="footer">
             <span class="copyright">&copy; 2018 Ape Rising</span>
         </div>
