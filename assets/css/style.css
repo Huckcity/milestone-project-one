@@ -8,19 +8,17 @@ body {
     color: #f5f5f5;
 }
 
+.container {
+    margin-top: 20px;
+}
 .uppercase {
     text-transform: uppercase;
-}
-
-.container-fluid {
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
 }
 
 .nav-list {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .nav-list li {
@@ -34,8 +32,12 @@ body {
     display: inline;
 }
 
+.landing {
+    text-align: center;
+}
+
 .album-cover {
-    width: 42%;
+    width: 44%;
 }
 
 .buy-image {
@@ -46,13 +48,14 @@ body {
 }
 
 .footer {
-    padding-top: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .copyright {
     color: #4f4f4f;
 }
-
 
 .inner-container {
     width: 80%;
@@ -85,17 +88,17 @@ body {
     height: 100%;
 }
 
-
 .grid-container {
-    margin-top: 50px;
+    margin-top: 30px;
     display: grid;
     grid-gap: 1.5em;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(3);
-    grid-template-areas: 
-    "a a b"
-    "d c b"
-    "d e f";
+    grid-template-areas: "a a" "b b" "c c" "d d" "e e";
+}
+
+@media(min-width: 990px) {
+    .grid-container {
+        grid-template-areas: "a a b" "c c b" "e d d";
+    }
 }
 
 .box1 {
@@ -104,26 +107,18 @@ body {
 
 .image1 {
     grid-area: b;
-    text-align: center;
-    min-width: 100px;
 }
 
-.box2 {
+.blockquote {
     grid-area: c;
 }
 
-.image2 {
+.box2 {
     grid-area: d;
-    min-width: 100px;
 }
 
-.box3 {
-    grid-area: f;
-}
-
-.box4 {
+.image2 {
     grid-area: e;
-    text-align: center;
 }
 
 .image-thumb {
@@ -135,16 +130,49 @@ body {
     text-align: center;
 }
 
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn-red {
+    background-color: #b30001;
+}
+.social-icons {
+    padding-left: 0;
+}
+.social-icons li {
+    display: inline;
+    margin: 10px;
+}
+
+.social-icons > li > a {
+    color: #8f8f8f;
+    display: inline;
+    margin: 10px;
+}
+
+.social-icons > li > a:hover {
+    color: #fff;
+}
 /************* MEDIA QUERIES ***********************/
 
-@media(max-width: 767px) {
+@media(max-width: 990px) {
     .album-cover {
         width: 80%;
     }
 
-    .nav-list li {
-        text-align: left;
+    .navbar-toggle {
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
     }
+    
+    .nav-list {
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
 
 @media(max-width: 1900px) {
