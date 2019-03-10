@@ -16,15 +16,10 @@ The site is separated into 5 simple pages and titled according to the content of
 
 The site is based on Bootstrap and is responsive across all screen sizes. 
 
-### Features Left to Implement
-- Another feature idea
-
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
--HTML5
--CSS3
+- HTML5
+- CSS3
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 - [Bootstrap v3.3.7](https://getbootstrap.com/docs/3.3/)
@@ -34,11 +29,12 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ## Testing
 
 The site has been teseted thoghroughly across multiple screen sizes. This testing was conducted using Firefox/Chrome/Safari and each of their relevant developer tools.
-The site has also been tested manually on the following devices
-    -Macbook Pro 15"
-    -iPad 4 9.7"
-    -Xiaomi Air 13" (Ubuntu)
-    -Honor Play 6.3"
+The site has also been tested manually on the following devices:
+
+    - Macbook Pro 15"
+    - iPad 4 9.7"
+    - Xiaomi Air 13" (Ubuntu)
+    - Honor Play 6.3"
 
 The site displayed correctly in all cases.
 
